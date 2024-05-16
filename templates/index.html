@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Tracker</title>
+</head>
+<body>
+  <h1>Health Tracker</h1>
+  <form method="POST">
+    <label for="temperature">Temperature:</label>
+    <input type="number" name="temperature" id="temperature" required><br><br>
+
+    <label for="heart_rate">Heart Rate:</label>
+    <input type="number" name="heart_rate" id="heart_rate" required><br><br>
+
+    <label for="question">Ask me a question:</label><br>
+    <textarea name="question" id="question" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Chatbot Says:</h2>
+  <p>{{ response }}</p>
+
+</body>
+</html>
